@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Piggymetrics by sqshq</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Piggymetrics</h1>
+        <p>A Simple way to deal with personal finances</p>
+
+        <p class="view"><a href="https://github.com/sqshq/PiggyMetrics">View the Project on GitHub <small>sqshq/PiggyMetrics</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/sqshq/PiggyMetrics/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sqshq/PiggyMetrics/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sqshq/PiggyMetrics">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="piggy-metrics" class="anchor" href="#piggy-metrics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Piggy Metrics</h1>
+
+<p><strong>A Simple way to deal with personal finances</strong></p>
+
+<p>This is <a href="http://my-piggymetrics.rhcloud.com">a small web application</a> which could help you to estimate regular expenses and analyze your own financial statistics.</p>
+
+<p><img src="http://hsto.org/files/bc9/d77/26d/bc9d7726d68548ba96f6a680cdabdbd7.gif" alt="Piggy Metrics"></p>
+
+<h2>
+<a id="structure" class="anchor" href="#structure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Structure</h2>
+
+<p>Spring MVC based backend with the following functions:</p>
+
+<ul>
+<li>sign up / login users</li>
+<li>multi-language Demo account</li>
+<li>saving user's data</li>
+<li>parsing current quotes from The Central Bank of Russia XML</li>
+<li>multi-language autodetect (english/russian packs included)</li>
+<li>regularly automatic backup to email</li>
+</ul>
+
+<p>js/jQuery frontend:</p>
+
+<ul>
+<li>ajax interactions with server</li>
+<li>incomes, expenses, savings and notes input</li>
+<li>live statistics/forecasts computation</li>
+</ul>
+
+<h2>
+<a id="run-in-docker-container" class="anchor" href="#run-in-docker-container" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run in Docker container</h2>
+
+<ul>
+<li><code>make build</code></li>
+<li><code>make run</code></li>
+<li>hit <code>http://localhost:8080</code>
+</li>
+</ul>
+
+<h2>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h2>
+
+<ul>
+<li>database password is provided in the <a href="Makefile">Makefile</a>, application gets it from environment variable. You can specify jdbc connection stuff in <a href="/src/main/resources/config/dev.properties">dev.properties</a> file</li>
+<li>
+<a href="/src/main/resources/config/dev.log4j.xml">dev.log4j.xml</a> and <a href="/src/main/resources/config/dev.properties">dev.properties</a> files may contain email credentials for log email reports and backup functioning</li>
+</ul>
+
+<h2>
+<a id="support" class="anchor" href="#support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support</h2>
+
+<p>PiggyMetrics is open source, and would greatly appreciate your help. Feel free to contact me with any questions, especially if you found some bugs or issues</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>This project is licensed under the MIT License.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sqshq">sqshq</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
